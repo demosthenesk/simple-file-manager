@@ -7,4 +7,4 @@ them or rename and create new.
 This project was created for educational purposes while 
 learning Android Studio 3 and android development.
 
-It is licensed with GPL 3 license and is free for your one needs.
+It is licensed with GPL 3 license and is free for your own needs.
