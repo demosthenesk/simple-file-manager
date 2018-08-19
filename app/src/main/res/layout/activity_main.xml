@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtvPath"
+                    android:layout_width="358dp"
+                    android:layout_height="21dp"
+                    android:text="/system/path"
+                    android:textSize="15sp"
+                    tools:layout_editor_absoluteX="13dp"
+                    tools:layout_editor_absoluteY="8dp" />
+
+            </LinearLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="7dp"
+                    android:spinnerMode="dialog"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnParentDir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginLeft="110dp"
+                    android:background="@drawable/btn_bg"
+                    android:onClick="onParentDir_Click"
+                    android:text=".." />
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnMainStorage"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_bg"
+                    android:drawableLeft="@drawable/hdd"
+                    android:onClick="onMainStorage_Click"
+                    android:text="Main Storage"
+                    android:textSize="10sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="70dp" />
+
+                <Button
+                    android:id="@+id/btnSDCard"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_bg"
+                    android:drawableLeft="@drawable/sdcard"
+                    android:onClick="onSDCARD_Click"
+                    android:text="SD Card"
+                    android:textSize="10sp"
+                    tools:layout_editor_absoluteX="116dp"
+                    tools:layout_editor_absoluteY="70dp" />
+
+                <Button
+                    android:id="@+id/btnDownloads"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_bg"
+                    android:drawableLeft="@drawable/downloads"
+                    android:onClick="onDownloads_Click"
+                    android:text="Downloads"
+                    android:textSize="10sp"
+                    tools:layout_editor_absoluteX="216dp"
+                    tools:layout_editor_absoluteY="70dp" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnDocuments"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_bg"
+                    android:drawableLeft="@drawable/documents36x36"
+                    android:onClick="onDocuments_Click"
+                    android:text="Documents"
+                    android:textSize="10sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="118dp" />
+
+                <Button
+                    android:id="@+id/btnImages"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_bg"
+                    android:drawableLeft="@drawable/images36x36"
+                    android:onClick="onImages_Click"
+                    android:text="Images"
+                    android:textSize="10sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="118dp" />
+
+                <Button
+                    android:id="@+id/btnAudio"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_bg"
+                    android:drawableLeft="@drawable/audio"
+                    android:onClick="onAudio_Click"
+                    android:text="Audio"
+                    android:textSize="10sp"
+                    tools:layout_editor_absoluteX="216dp"
+                    tools:layout_editor_absoluteY="118dp" />
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnVideo"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_bg"
+                    android:drawableLeft="@drawable/video"
+                    android:onClick="onVideo_Click"
+                    android:text="Videos"
+                    android:textSize="10sp"
+                    tools:layout_editor_absoluteX="116dp"
+                    tools:layout_editor_absoluteY="166dp" />
+
+                <Button
+                    android:id="@+id/btnDCIM"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_bg"
+                    android:drawableLeft="@drawable/camera36x36"
+                    android:onClick="onDCIM_Click"
+                    android:text="DCIM"
+                    android:textSize="10sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="166dp" />
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lstFolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
